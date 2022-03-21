@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win7.aukcijaproject.ItemActivity">
+
+       <include android:id="@+id/toolbar" layout="@xml/toolbar" />
+
+    <!--      <android.support.design.widget.TabLayout
+               android:id="@+id/tab_layout"
+               android:layout_below="@+id/toolbar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <android.support.design.widget.TabItem
+                   android:text="Tab1"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" />
+
+
+               <android.support.design.widget.TabItem
+                   android:text="Tab2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   />
+
+           </android.support.design.widget.TabLayout>
+       -->
+    <ImageView
+        android:id="@+id/imageViewItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="60dp"
+        android:layout_below="@id/toolbar"
+        android:src="@drawable/music"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_below="@id/toolbar"
+        android:layout_toRightOf="@+id/imageViewItemImage"
+        android:layout_toEndOf="@+id/imageViewItemImage"
+        android:textAlignment="center"
+        android:text="Name"
+        />
+
+    <TextView
+        android:id="@+id/textViewItemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_below="@+id/textViewItemName"
+        android:layout_toRightOf="@+id/imageViewItemImage"
+        android:layout_toEndOf="@+id/imageViewItemImage"
+        android:textAlignment="center"
+        android:text="Description"
+        />
+
+    <EditText
+        android:id="@+id/licitajcijaID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageViewItemImage"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Unesite cifru"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnunos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/licitajcijaID"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/licitajcijaID"
+        android:text="Potvrdi" />
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:andorid = "http://schemas.android.com/apk/res/android"
+    andorid:layout_width="fill_parent"
+    andorid:layout_height="fill_parent">
+
+
+    <!--<Button
+        andorid:id="@+id/btn1"
+        andorid:layout_width="wrap_content"
+        andorid:layout_height="wrap_content"
+        andorid:text="Items Activity"
+        andorid:layout_above="@+id/textView10"
+        andorid:layout_centerHorizontal="true"
+        andorid:layout_marginBottom="199dp" />
+
+    <TextView
+        andorid:id="@+id/textView10"
+        andorid:layout_width="wrap_content"
+        andorid:layout_height="wrap_content"
+        andorid:layout_alignParentBottom="true"
+        andorid:layout_alignParentLeft="true"
+        andorid:layout_alignParentStart="true"
+        andorid:text="SplashScreenActivity" />
+    -->
+    <ImageView
+        andorid:layout_width="fill_parent"
+        andorid:layout_height="fill_parent"
+        andorid:src="@drawable/spash_screen"
+        />
+</RelativeLayout>
